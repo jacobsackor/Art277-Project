@@ -1,0 +1,901 @@
+/*The below codes  deals with the heading when its operating on a phone*/
+.heading {
+  background-image: url("5-Underwater-Cameras-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style:dashed;
+  border-width: thick;
+  font-weight: bold;
+  font-family: Constantia,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size:15px;
+  text-shadow: 30px 24px 12px 11px whitesmoke;
+  margin-left: -9px;
+  margin-right: -7px;
+  margin-top: -8px;
+  }
+  .heading hr{
+    width:300px;
+    color:rgb(92, 53, 80);
+    }
+    .start {
+      background-color:black;
+      margin-top:-17px; 
+      margin-bottom: 40px;
+
+    }
+    .start p {
+      font-family:"Microsoft Himalaya",sans-serif;
+      font-size:15px;
+      font-weight: bold;
+    }
+        .start2 {
+      background-color:black;
+      margin-top:17px; 
+      margin-bottom:90px;
+
+    }
+    .start2 p {
+      font-family:"Microsoft Himalaya",sans-serif;
+      font-size:15px;
+      font-weight: bold;
+    }
+/*---This code defines the position of the menu button*/
+.menu-button {
+  width: 50px;
+    height: 50px;
+    position: fixed;
+    top:-4px;
+    left:300px;
+}
+.menu1 {
+  position:fixed;
+  height:30px;
+  }
+  .menu2{
+  position:fixed;
+  left:50px;
+  height:30px;
+  }
+  .menu3 {
+  position:fixed;
+  left:90px;
+  height:30px;
+  width:20px;
+  }
+    /*--this code style the section area of the html */
+section {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(9, 63, 65);
+    margin-top: -170px;
+    border: groove;
+    border-top-left-radius:30px;
+    border-top-right-radius: 30px;
+    -webkit-animation:disappear 20s infinite alternate;
+    margin-bottom:-150px;
+}
+/*--------Image and image animation begins---*/
+.slider {
+    width: 800px;
+    height:500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width:500%;
+    height:500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slides {
+    width: 20%;
+    transition: 2s;
+}
+.slides img {
+    width: 400px;
+    height:400px;
+}
+/*Css for manualnavigation-manual*/
+
+.navigation-manual {
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    left: 40px;
+    top: 550px;
+}
+.manual-btn {
+    border: 2px solid rgb(16, 136, 110);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+.manual-btn:hover {
+    background: rgb(16, 136, 110);;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+    transition: 3s;
+}
+#radio2:checked ~ .first{
+    margin-left: -600%;
+    transition: 3s;
+}
+#radio3:checked ~ .first{
+    margin-left: -1200%;
+    transition: 3s;
+}
+#radio4:checked ~ .first{
+    margin-left: -1800%;
+    transition: 3s;
+}
+
+/*--CSS for automatic animation--*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div {
+    border: solid (16, 136, 110);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btnl{
+    background: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: cyan;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: cyan;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: cyan;
+}
+/*---image and image animation ends-----*/
+.words {
+    display: block;
+    position: static;
+    justify-content: space-around;
+}
+
+/*Playful allows the target text to change color over time*/
+.playful  {
+    color:rgba(172, 21, 21, 0.863);
+    font-size: 30px;
+    -webkit-animation:change 20s infinite alternate;
+  }
+  /*--The below animation code deterines the code and color for the class PLAYFUL*/
+  @-webkit-keyframes change {
+    0%{
+      color:rgba(172, 21, 21, 0.863);
+    }
+    10%{
+      color:rgb(75, 27, 10) 4;
+    }
+    20%{
+      color:green;
+    }
+    30%{
+      color:blue;
+    }
+    40%{
+      color:orange;
+    }
+    50%{
+      color:yellow;
+    }
+    60%{
+      color:#FF7D40;
+    }
+    70%{
+      color:#CD4F39;
+    }
+    80%{
+    color:#388E8E;
+    }
+    90%{
+      color:brown;
+    }
+    100%{
+      color:#71C671;
+    }
+    /*---The below code style the Copy right*/
+  }
+  .copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: rgb(245, 241, 241);
+  }
+  
+  .click:hover {
+    cursor: pointer;
+    color: red;
+  }
+  .edmond {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+  .edmond span {
+    color:red;
+  }
+  .show {
+    background-image: url("Screenshot_20210527-122309.png");
+    -webkit-animation:appear 20s infinite alternate;
+  }
+
+  @-webkit-keyframes appear{
+    0% {
+      background-image: url("img103.png");
+    }
+    50% {
+      background-image: url("Screenshot_20210527-122340.png");
+    }
+    100%{
+      background-image: url("ashim-d-silva-CwJb7ly-iqc-unsplash.jpg");
+    }
+  } 
+/*Deals with the background animation*/
+  @-webkit-keyframes disappear{
+    0% {
+      background-image: url("beach-city.jpg");
+    }
+    50% {
+      background-image: url("Screenshot_20210527-122412.png");
+    }
+    100%{
+      background-image: url("img103.png");
+    }
+  } 
+  body{
+background-color: black;
+  }
+  /*------Footer styling starts here*/
+footer {
+  background-color:black;
+  margin-left: -7px;
+  margin-right: -8px;
+  height: 440px;
+  padding:12px;
+  font-family: serif,"Cambria Math";
+  color:white;
+}
+  
+    .icon1 {
+      position:absolute;
+      left:200px;
+      height:70px;
+      width:30px; 
+    }
+       .icon2{
+         position:absolute;
+      left:250px;
+      height:75px;
+      width:30px; 
+    }
+         .icon3{
+        position:absolute;
+       left:300px;
+      height:75px;
+      width:30px; 
+    }
+       .icon4 {
+      position:absolute;
+      left:200px;
+      height:60px;
+      width:30px; 
+    }
+       .icon5{
+         position:absolute;
+      left:250px;
+      height:70px;
+      width:30px; 
+    }
+         .icon6{
+        position:absolute;
+       left:300px;
+      height:60px;
+      width:30px; 
+    }
+     .icon7 {
+
+      position:absolute;
+
+      left:200px;
+      height:60px;
+      width:30px; 
+    }
+       .icon8{
+         position:absolute;
+      left:250px;
+      height:60px;
+      width:30px; 
+    }
+         .icon9{
+        position:absolute;
+       left:300px;
+      height:75px;
+      width:30px; 
+    }
+    .edmond{
+      font-size: 10px;
+    }
+    .edmond div{
+      padding-left:10px;
+      height: 80px;
+    }
+    
+    .inspire {
+      font-size:20px;
+      font-style:italic;
+    }
+    .inspire v {
+      font-size:10px;
+    }
+           /*-----The below code deals with the Afric Page---------*/
+       .afro1 {
+         margin-top:-14px;
+         width:350px;
+         height: 250px;
+       }
+       .afro2 {
+         margin-top:-14px;
+         width:350px;
+         height: 250px;
+       }
+       .afro3 {
+         margin-top:-14px;
+         width:350px;
+         height: 250px;
+       }
+       .afro4 {
+         margin-top:-14px;
+         width:350px;
+         height: 250px;
+       }
+       .afro5 {
+         margin-top:-14px;
+         width:350px;
+         height: 250px;
+       }
+         .black1 h1 {
+         position:absolute;
+         background-color: aliceblue;
+         color:black;
+         left:140px;
+         top:230px;
+         width:100px;
+         height: 40px;
+         padding-top: 30px;
+         font-size:15px;
+       }
+       
+       .black1 hr {
+         color:black;
+         width:50px;
+       }
+        .black2 h1 {
+            position: absolute;
+            background-color: aliceblue;
+            color: black;
+            left: 140px;
+            top: 460px;
+            width: 100px;
+            height: 50px;
+            padding-top: 30px;
+            font-size: 15px;
+          }
+       
+          .black2 hr {
+            color: black;
+            width: 50px;
+          }
+        .black3 h1 {
+            position: absolute;
+            background-color: aliceblue;
+            color: black;
+            left: 140px;
+            top: 690px;
+            width: 100px;
+            height: 40px;
+            padding-top: 30px;
+            font-size: 15px;
+          }
+       
+          .black3 hr {
+            color: black;
+            width: 50px;
+          }
+        .black4 h1 {
+            position: absolute;
+            background-color: aliceblue;
+            color: black;
+            left: 140px;
+            top: 920px;
+            width: 100px;
+            height: 40px;
+            padding-top: 30px;
+            font-size: 15px;
+          }
+       
+          .black4 hr {
+            color: black;
+            width: 50px;
+          }
+          .black5 h1 {
+            position: absolute;
+            background-color: aliceblue;
+            color: black;
+            left: 140px;
+            top: 1150px;
+            width: 100px;
+            height: 50px;
+            padding-top: 30px;
+            font-size: 15px;
+          }
+       
+          .black5 hr {
+            color: black;
+            width: 50px;
+          }
+/*The below code styles the about us page when u run it on a phone*/
+.us {
+  width:100px;
+}
+.us2 {
+  width:100px;
+  margin-left:0px;
+}
+.us3 {
+  width:100px;
+  margin-left: 10px;
+}
+/*tge below code deals with the liberia page*/
+.pics {
+  object-fit:normal;
+  width: 350px;
+  height: 320px;
+}
+.click {
+  position:absolute;
+top:1035px;
+  left:8px;
+  height:320px;
+  width:50px;
+  background-color:rgba(160, 184, 179, 0.103);
+}
+.click img {
+  transform:rotate(900deg);
+  padding-right:5px;
+  padding-bottom:150px;
+  height:40px;
+}
+.click2 {
+  position:absolute;
+  top:1035px;
+  left:297px;
+  height:320px;
+  width:50px;
+  background-color:rgba(160, 184, 179, 0.103);
+}
+.click2 img {
+  padding-left:5px;
+  padding-top:150px;
+  height:40px;
+}
+.section1{
+  background-color: whitesmoke;
+  font-weight:normal;
+  font-size: 10px;
+}
+.click3 {
+  position:absolute;
+  top:990px;
+  left:8px;
+  height:320px;
+  width:50px;
+  background-color:rgba(160, 184, 179, 0.103);
+}
+.click3 img {
+  transform:rotate(900deg);
+  padding-right:5px;
+  padding-bottom:150px;
+  height:40px;
+}
+.click4 {
+  position:absolute;
+  top:990px;
+  left:297px;
+  height:320px;
+  width:50px;
+  background-color:rgba(160, 184, 179, 0.103);
+}
+.click4 img {
+  padding-left:5px;
+  padding-top:150px;
+  height:40px;
+}
+.section2{
+  background-color: whitesmoke;
+  font-weight:normal;
+  font-size: 15px;
+}
+.frame {
+}
+.photoshop {
+  width:350px;
+  height:350px;
+}
+
+    @media only screen and (min-width:768px){
+/*-----THe below code regulates the headin of the page when its being run on a computer*/
+      .heading {
+        background-image: url("5-Underwater-Cameras-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+            border-style:groove;
+            border-width: thick;
+            font-weight: bold;
+            font-family: Constantia,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            text-shadow: 30px 24px 12px 11px whitesmoke;
+            margin-left: -9px;
+            margin-right: -7px;
+            margin-top: -8px;
+        }
+    .heading hr{
+      width:1000;
+      color:rgb(92, 53, 80);
+    }
+    /*----deals with the class START---*/
+    .start {
+      background-color:black;
+      margin-top: -30px;
+    }
+             .start p {
+               font-family: "Microsoft Himalaya", sans-serif;
+               font-size: 30px;
+             }
+       
+       .menu-button {width: 50px;
+        height: 50px;
+        position:fixed;
+        top:50px;
+        left:1250px;
+       }
+       
+       .menu1 {
+         position:fixed;
+         height:30px;
+         width: 20px;
+         left: 70px;
+         
+       }
+       .menu2{
+         position:fixed;
+         left:50px;
+         height:30px;
+         width: 20px;
+       }
+       .menu3 {
+         position:fixed;
+         left:90px;
+         height:30px;
+         width:20px;
+       }
+       
+       /*Heading ends here*/
+       /*The below code deals with the slide animation when its being run on a computer*/
+        .navigation-auto {
+          position: absolute;
+          display: flex;
+          width: 800px;
+          justify-content: center;
+          margin-top: 460px;
+        }
+        .navigation-manual {
+          position: absolute;
+     width: 800px;
+     margin-top: -40px;
+     display: flex;
+     justify-content: center;
+     top: 700px;
+     left: 250px;
+         }
+          #radio1:checked ~ .first{
+              margin-left: 0;
+              transition: 3s;
+          }
+          #radio2:checked ~ .first{
+              margin-left: -500%;
+              transition: 3s;
+          }
+          #radio3:checked ~ .first{
+              margin-left: -1000%;
+              transition: 3s;
+          }
+          #radio4:checked ~ .first{
+              margin-left: -1500%;
+              transition: 3s;
+          }
+        .slider {
+          width: 1200px;
+          height:500px;
+          border-radius: 10px;
+          overflow: hidden;
+      }
+           .slides img {
+             width: 1200px;
+             height:500px;
+        }
+        section {
+          margin: 0px;
+          padding: 0px;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(9, 63, 65);
+          margin-top: -170px;
+          border: groove;
+          border-top-left-radius: 30px;
+          border-top-right-radius: 30px;
+          -webkit-animation: disappear 20s infinite alternate;
+        }
+        /*SLider animation ends here*/
+        /*The below code deals with the footer tag*/
+        footer {
+          background-color: black;
+          margin-left: -7px;
+          margin-right: -8px;
+          height: 740px;
+          padding: 12px;
+          font-family: serif, "Cambria Math";
+          color: white;
+        }
+        .inspire {
+          font-size: 40px;
+          font-style: italic;
+        }
+        .inspire v {
+          font-size: 20px;
+          font-style: normal;
+        }
+        .icon1 {
+          position:absolute;
+          left:900px;
+          height:107px;
+          width:70px; 
+        }
+           .icon2{
+             position:absolute;
+          left:1100px;
+          height:112px;
+          width:70px; 
+        }
+             .icon3{
+            position:absolute;
+           left:1000px;
+          height:107px;
+          width:70px; 
+        }
+           .icon4 {
+          position:absolute;
+          left:900px;
+          height:104px;
+          width:70px; 
+        }
+           .icon5{
+             position:absolute;
+          left:1100px;
+          height:109px;
+          width:70px; 
+        }
+             .icon6{
+            position:absolute;
+           left:1000px;
+          height:107px;
+          width:70px; 
+        }
+         .icon7 {
+    
+          position:absolute;
+    
+          left:900px;
+          height:101px;
+          width:70px; 
+        }
+           .icon8{
+             position:absolute;
+          left:1100px;
+          height:101px;
+          width:70px; 
+        }
+             .icon9{
+            position:absolute;
+           left:1000px;
+          height:109px;
+          width:70px; 
+        }
+        .edmond {
+          font-size: 15px;
+        }
+        .edmond div{
+          height: 120px;
+          padding-left: 40px;
+        }
+        .playful  {
+          color:rgba(172, 21, 21, 0.863);
+          font-size: 30px;
+          -webkit-animation:change 20s infinite alternate;
+          font-style: normal;
+        }
+       
+       /*-----The below code deals with the Afric Page---------*/
+       .afro1 {
+         margin-top:-14px;
+         width:1340px;
+       }
+       .afro2 {
+         margin-top:-14px;
+         width:1340px;
+       }
+       .afro3 {
+         margin-top:-14px;
+         width:1340px;
+       }
+       .afro4 {
+         margin-top:-14px;
+         width:1340px;
+       }
+       .afro5 {
+         margin-top:-14px;
+         width:1340px;
+       }
+       .black1 h1 {
+         position:absolute;
+         background-color: aliceblue;
+         color:black;
+         left: 600px;
+         top:470px;
+         width:200px;
+         height: 140px;
+         padding-top: 70px;
+       }
+       
+       .black1 hr {
+         color:black;
+         width:100px;
+       }
+       .black2 h1 {
+         position:absolute;
+         background-color: aliceblue;
+         color:black;
+         left: 600px;
+         top:1300px;
+         width:200px;
+         height: 140px;
+         padding-top: 70px;
+       }
+       .black2 hr {
+         color:black;
+         width:100px;
+       }
+       .black3 h1 {
+         position:absolute;
+         background-color: aliceblue;
+         color:black;
+         left: 600px;
+         top:2130px;
+         width:200px;
+         height: 140px;
+         padding-top: 70px;
+       }
+       .black3 hr {
+         color:black;
+         width:100px;
+       }
+       .black4 h1 {
+         position:absolute;
+         background-color: aliceblue;
+         color:black;
+         left: 600px;
+         top:2900px;
+         width:200px;
+         height: 140px;
+         padding-top: 70px;
+       }
+       .black4 hr {
+         color:black;
+         width:100px;
+       }
+       .black5 h1 {
+         position:absolute;
+         background-color: aliceblue;
+         color:black;
+         left: 600px;
+         top:3800px;
+         width:200px;
+         height: 140px;
+         padding-top: 70px;
+       }
+       .black5 hr {
+         color:black;
+         width:100px;
+       }
+    
+/*The below code deals with the about us page*/
+.us {
+  width:400px;
+  
+}
+.us2 {
+  width:400px;
+  margin-left:50px;
+}
+.us3 {
+  width:400px;
+  margin-left: 50px;
+}
+/*The below code deals with the liberia page*/
+.pics {
+  object-fit:cover;
+  width:1340px;
+  height:620px;
+}
+.click {
+  position:absolute;
+  top:1138px;
+  left:8px;
+  height:623px;
+  width:80px;
+  background-color:rgba(160, 184, 179, 0.103);
+}
+.click img {
+  transform:rotate(900deg);
+  padding-right:10px;
+  padding-bottom:290px;
+  height:40px;
+}
+.click2 {
+  position:absolute;
+  top:1138px;
+  left:1270px;
+  height:620px;
+  width:78px;
+  background-color:rgba(160, 184, 179, 0.103);
+}
+.click2 img {
+  padding-left:10px;
+  padding-top:290px;
+  height:40px;
+}
+}
+
+img{width: 100%;}
